@@ -1,0 +1,121 @@
+
+html{
+    background-color: #ffefd5;
+}
+
+body{
+    
+    margin:0em;
+    font-family: 'Montserrat', sans-serif;
+    font-size:20px;
+    line-height: 1.9;
+    
+}
+nav{    
+    margin: 0px;
+    width:100%;
+    display:flex;
+    align-items: center;
+    gap: 15%;
+    
+}
+figure{
+    width: 40%;
+    margin: 10px;
+}
+
+.logo-inside img{
+    width: 25%;
+    height: auto;
+    min-width: 100px;
+    border:2px dashed gold ;
+    border-radius: 50%;
+    
+}
+ul{
+    
+    
+    display: inline-block;
+    font-size:27px;
+    list-style-type: none;
+    justify-content: flex-end;
+    align-items: center;
+    color: #112A46;
+    word-spacing: 100px;
+    
+}
+
+
+li a{
+    
+    display:inline-block;
+    text-decoration: none;
+    color: #112A46;
+    
+    
+}
+section {
+    
+    margin-left: 3em;
+    margin-right: 3em;
+    display: flex;
+    flex-flow: nowrap;
+    align-items: justify;
+    gap: 15%;
+    
+}
+.my-pic img{
+    
+    align-items: flex-end;
+    border-radius: 10%;
+}
+
+
+p{
+    display: flex-start;
+    
+    text-align:justify;
+    text-decoration: solid;
+    font-size: 22px;
+    text-indent: 2em;
+    color: #112A46;
+    width: 70%;
+    padding-left: 70px;
+    padding-top: 70px;
+    
+}
+b{
+    text-transform: uppercase;
+    color: #112A46;
+}
+a:hover ,a:focus{
+    color:gold;
+    text-decoration: underline;
+}
+a.visited{
+    color:none;
+}
+nav:hover {
+    background-color:rgba(253, 229, 188, 0.396);
+}
+.animate {
+    animation: slide;
+    animation-duration: 10s;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+    
+}
+@keyframes slide {
+    0%{
+        transform: translateZ(0);
+    }
+    33%{
+        transform: translatez(60px);
+    }
+    66%{
+        transform: translate(-60px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
